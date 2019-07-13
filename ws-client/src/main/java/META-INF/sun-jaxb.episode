@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bindings version="2.1" xmlns="http://java.sun.com/xml/ns/jaxb">
+  <!--
+
+此文件是由 JavaTM Architecture for XML Binding (JAXB) 引用实现 v2.2.11 生成的
+请访问 <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+在重新编译源模式时, 对此文件的所有修改都将丢失。
+生成时间: 2019.07.13 时间 07:46:46 PM CST 
+
+  -->
+  <bindings scd="x-schema::tns" xmlns:tns="http://www.devpail.com/webservice">
+    <schemaBindings map="false">
+      <package name="com.devpail.webservice.client"/>
+    </schemaBindings>
+    <bindings scd="tns:documentRequest">
+      <class ref="com.devpail.webservice.client.DocumentRequest"/>
+    </bindings>
+    <bindings scd="tns:documentResponse">
+      <class ref="com.devpail.webservice.client.DocumentResponse"/>
+    </bindings>
+    <bindings scd="tns:authorRequest">
+      <class ref="com.devpail.webservice.client.AuthorRequest"/>
+    </bindings>
+    <bindings scd="tns:authorResponse">
+      <class ref="com.devpail.webservice.client.AuthorResponse"/>
+    </bindings>
+    <bindings scd="~tns:author">
+      <class ref="com.devpail.webservice.client.Author"/>
+    </bindings>
+    <bindings scd="tns:authorListRequest">
+      <class ref="com.devpail.webservice.client.AuthorListRequest"/>
+    </bindings>
+    <bindings scd="tns:authorListResponse">
+      <class ref="com.devpail.webservice.client.AuthorListResponse"/>
+    </bindings>
+    <bindings scd="~tns:sex">
+      <typesafeEnumClass ref="com.devpail.webservice.client.Sex"/>
+    </bindings>
+  </bindings>
+</bindings>
+
