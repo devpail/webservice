@@ -7,6 +7,8 @@ import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * @description:
@@ -17,7 +19,7 @@ import java.nio.file.Paths;
 @Service
 public class DocumentService {
     public String getDocument(String id) {
-        id = "53553ce8-d5fe-475c-84ec-1ae9fa2f7f13";
+        id = "484fa554-218b-46fa-afa8-533879a0a334";
         Path filePath = Paths.get("E:",id+".xml");
         return readFileByFileInputStream(filePath);
     }
@@ -25,8 +27,10 @@ public class DocumentService {
     private String readFileByFileInputStream(Path filePath){
         try {
             byte[] bytes = Files.readAllBytes(filePath);
+            Map map = new HashMap<String, String>();
             String content = new String(bytes, StandardCharsets.UTF_8);
-            return content.length()+"";
+            // return content.length()+"";
+            return content;
         } catch (IOException e) {
             e.printStackTrace();
         }
